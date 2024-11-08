@@ -50,7 +50,7 @@ def blank_screen():
     time.sleep(1)  # Display blank screen for 1 sec
     plt.close()
 
-# Display introductory message and wait for user confirmation
+#intro message
 print("""
 Welcome to the experiment, and thank you for helping us out!
 
@@ -72,7 +72,7 @@ while True:
     else:
         print("Invalid input. Please enter 1 to confirm.")
 
-# Proceed with displaying the graphs
+#run experiment
 for i in range(1, 11):
     file_path = f"{base_file_path}{i}{file_extension}"
     # Read the data from each Excel file
