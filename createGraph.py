@@ -10,7 +10,7 @@ values = df[semesters].values.flatten()
 semester_labels = [semester for semester in semesters for _ in range(len(df))]
 # Create scatter plot
 plt.figure(figsize=(8, 6))
-plt.scatter(semester_labels, values, color='blue')
+plt.scatter(semester_labels, values, color='black')
 plt.xlabel("Semester")
 plt.ylabel("Attendance %")
 plt.title("Attendance by Semester")
