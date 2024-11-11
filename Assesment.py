@@ -107,20 +107,14 @@ def blank_screen():
     time.sleep(1)
     plt.close()
 
-# Run the chosen experiment first
-if graph_choice == "1":
-    for i in range(1, 11):
-        df = pd.read_excel(f"{base_file_path}{i}{file_extension}")
+# Run the experiment in the specified alternating order
+for i in range(1, 11):
+    df = pd.read_excel(f"{base_file_path}{i}{file_extension}")
+    if graph_choice == "1":
         display_scatter(df, i)
-    for i in range(1, 11):
-        df = pd.read_excel(f"{base_file_path}{i}{file_extension}")
         display_heatmap(df, i)
-else:
-    for i in range(1, 11):
-        df = pd.read_excel(f"{base_file_path}{i}{file_extension}")
+    else:
         display_heatmap(df, i)
-    for i in range(1, 11):
-        df = pd.read_excel(f"{base_file_path}{i}{file_extension}")
         display_scatter(df, i)
 
 # Write results to Excel file
