@@ -4,7 +4,7 @@ import statistics
 
 autumn_data_original = [94.2, 92.0, 92.4]
 spring_data_original = [96.7, 92.1, 93.0]
-summer_data_original = [94.2, 92.0, 92.4]
+summer_data_original = [94.6, 91.4, 92.1]
 # Define the seasonal averages across all years
 autumn_mean = np.mean(autumn_data_original)  # Average for Autumn
 spring_mean = np.mean(spring_data_original)  # Average for Spring
