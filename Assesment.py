@@ -127,8 +127,7 @@ try:
     for entry in response_data_scatter:
         sheet.append(entry)
 
-    # Add heat map responses starting from column M (or as chosen)
-    heatmap_start_col = 13  # Column M is the 13th column
+    heatmap_start_col = 7
     for idx, entry in enumerate(response_data_heatmap, start=next_row):
         for j, value in enumerate(entry):
             sheet.cell(row=idx, column=heatmap_start_col + j, value=value)
