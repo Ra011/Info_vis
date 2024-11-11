@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Read the Excel file from the provided file path
-file_path = "C:/Users/potha/Desktop/3rd year/Powerpoints/Info Vis 3736/infoviscw1/transposed_seasonal_absence_data_1.xlsx"
+file_path = "C:/Users/Student/OneDrive/Documents/Docs2/uni/year 3/semester 1/COMP3736 Information Visualization/cw/data/transposed_seasonal_absence_data_1.xlsx"
 df = pd.read_excel(file_path)
 
 # Extract columns for plotting
